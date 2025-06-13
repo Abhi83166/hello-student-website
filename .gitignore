@@ -7,8 +7,8 @@ node_modules/
 /coverage
 
 # Next.js
-/.next/
-/out/
+app/.next/
+# Keep out/ for GitHub Pages deployment
 
 # Production
 /build
