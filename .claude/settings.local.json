@@ -13,7 +13,9 @@
       "Bash(git add:*)",
       "Bash(git config:*)",
       "Bash(npm run build:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "Bash(zip:*)",
+      "Bash(tar:*)"
     ],
     "deny": []
   }
