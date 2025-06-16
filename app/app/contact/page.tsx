@@ -50,6 +50,7 @@ export default function ContactPage() {
     name: '',
     email: '',
     phone: '',
+    gender: '',
     college: '',
     subject: '',
     message: '',
@@ -84,6 +85,7 @@ export default function ContactPage() {
         name: '',
         email: '',
         phone: '',
+        gender: '',
         college: '',
         subject: '',
         message: '',
@@ -108,7 +110,7 @@ export default function ContactPage() {
       details: "+91 70211 74615",
       description: "Available 24/7 for assistance",
       action: () => window.location.href = 'tel:+917021174615',
-      color: "hello-green"
+      color: "hello-blue"
     },
     {
       icon: MessageCircle,
@@ -116,7 +118,7 @@ export default function ContactPage() {
       details: "+91 98200 72322",
       description: "Chat with us instantly",
       action: () => window.open('https://wa.me/919820072322?text=Hi%20Hello%20Student%20team,%20I%20am%20interested%20in%20learning%20more%20about%20your%20student%20accommodation%20services.', '_blank'),
-      color: "green"
+      color: "blue"
     },
     {
       icon: MapPin,
@@ -151,7 +153,7 @@ export default function ContactPage() {
     },
     {
       question: "What are the meal options?",
-      answer: "We offer optional home-cooked vegetarian meals."
+      answer: "You have the option to cook your own meals in our fully equipped kitchens, or, if you prefer, you can choose from our partnered meal services that offer delicious, home-cooked food as an add-on."
     }
   ];
 
@@ -264,13 +266,13 @@ export default function ContactPage() {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="bg-hello-green-50 border border-hello-green-200 rounded-2xl p-8 text-center"
+                  className="bg-hello-blue-50 border border-hello-blue-200 rounded-2xl p-8 text-center"
                 >
-                  <CheckCircle className="text-hello-green-600 mx-auto mb-4" size={48} />
-                  <h3 className="text-xl font-semibold text-hello-green-800 mb-2">
+                  <CheckCircle className="text-hello-blue-600 mx-auto mb-4" size={48} />
+                  <h3 className="text-xl font-semibold text-hello-blue-800 mb-2">
                     Message Sent Successfully!
                   </h3>
-                  <p className="text-hello-green-700">
+                  <p className="text-hello-blue-700">
                     Thank you for your inquiry. We'll get back to you within 2 hours.
                   </p>
                 </motion.div>
@@ -319,7 +321,7 @@ export default function ContactPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone Number
+                        Phone Number *
                       </label>
                       <div className="relative">
                         <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
@@ -329,6 +331,7 @@ export default function ContactPage() {
                           name="phone"
                           value={formData.phone}
                           onChange={handleInputChange}
+                          required
                           className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-hello-blue-500 focus:border-transparent transition-colors"
                           placeholder="+91 98765 43210"
                         />
@@ -355,6 +358,24 @@ export default function ContactPage() {
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="gender" className="block text-sm font-medium text-gray-700 mb-2">
+                        Gender *
+                      </label>
+                      <select
+                        id="gender"
+                        name="gender"
+                        value={formData.gender}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-hello-blue-500 focus:border-transparent transition-colors"
+                      >
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                    </div>
+
                     <div>
                       <label htmlFor="moveInDate" className="block text-sm font-medium text-gray-700 mb-2">
                         Preferred Move-in Date
@@ -425,7 +446,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-hello-blue-500 to-hello-green-500 text-white font-semibold py-4 px-8 rounded-xl hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                    className="w-full bg-gradient-to-r from-hello-blue-500 to-hello-blue-600 text-white font-semibold py-4 px-8 rounded-xl hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                   >
                     {isSubmitting ? (
                       <>
@@ -487,14 +508,14 @@ export default function ContactPage() {
                     href="https://wa.me/919820072322?text=Hi%20Hello%20Student%20team,%20I%20need%20immediate%20assistance."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+                    className="flex items-center space-x-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
                   >
                     <MessageCircle size={16} />
                     <span>WhatsApp</span>
                   </a>
                   {/* <a
                     href="mailto:support@hellostudent.in"
-                    className="flex items-center space-x-2 bg-hello-green-500 text-white px-4 py-2 rounded-lg hover:bg-hello-green-600 transition-colors"
+                    className="flex items-center space-x-2 bg-hello-blue-500 text-white px-4 py-2 rounded-lg hover:bg-hello-blue-600 transition-colors"
                   >
                     <Mail size={16} />
                     <span>Email</span>

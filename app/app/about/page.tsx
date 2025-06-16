@@ -129,9 +129,7 @@ export default function AboutPage() {
                 About <span className="text-gradient">Hello Student</span>
               </h1>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                We are dedicated to making house hunting easy for students in Mumbai. 
-                Our mission is to provide hassle-free, technology-driven living experiences 
-                that help students focus on what matters most - their education.
+              There's no better place than home, but we work 24/7 to offer the next best thing: safe, thoughtfully designed housing where students feel supported. From ground staff to senior leadership, our team stays hands-on every day to uphold comfort, security, and well-being—so students can focus on what matters most: their education.
               </p>
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 bg-hello-blue-100 rounded-2xl flex items-center justify-center">
@@ -139,12 +137,12 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Our Mission</h3>
-                  <p className="text-gray-600">Helping students find a home away from home</p>
+                  <p className="text-gray-600">Our goal is to ensure every student who joins us enjoys a safe, comfortable, and fulfilling place to live.</p>
                 </div>
               </div>
             </motion.div>
             
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -158,13 +156,13 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </section>
 
       {/* Our Story Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 to-green-50">
+      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 to-blue-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center glass-card p-12 rounded-3xl">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-8">
@@ -184,7 +182,7 @@ export default function AboutPage() {
                 of students because we've been there ourselves.
               </p>
               <p>
-                Today, we proudly serve students from over 15 prestigious colleges and institutions 
+                As of Today, we proudly serve students from over 15 prestigious colleges and institutions 
                 across Mumbai, providing them with not just accommodation, but a complete living 
                 experience that includes modern amenities, community building, and unwavering support.
               </p>
@@ -194,7 +192,7 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* Values Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-bl from-green-50 to-yellow-50">
+      <AnimatedSection className="section-padding bg-gradient-to-bl from-blue-50 to-yellow-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -234,7 +232,7 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* Achievements Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 via-white to-green-50">
+      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 via-white to-blue-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -277,14 +275,14 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* Partner Colleges Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-bl from-green-50 to-yellow-50">
+      <AnimatedSection className="section-padding bg-gradient-to-bl from-blue-50 to-yellow-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
               Partner <span className="text-gradient">Colleges</span> & Institutions
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We proudly serve students from these prestigious educational institutions across Mumbai.
+            Here is a list of some of our Prestigious Partner Institutions:
             </p>
           </div>
 
@@ -299,7 +297,7 @@ export default function AboutPage() {
                 className="glass-card p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="text-hello-green-500 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-hello-blue-500 flex-shrink-0 mt-1" size={20} />
                   <p className="text-gray-700 font-medium">{college}</p>
                 </div>
               </motion.div>
@@ -309,7 +307,7 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* Locations Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 via-white to-green-50">
+      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 via-white to-blue-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -350,18 +348,18 @@ export default function AboutPage() {
                   className="glass-card-tie-up p-4 rounded-xl text-center hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center justify-center space-x-2">
-                    <MapPin className="text-green-600" size={20} />
+                    <MapPin className="text-blue-600" size={20} />
                     <span className="font-semibold text-gray-800">{location}</span>
                   </div>
                 </motion.div>
               ))}
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-yellow-50 rounded-2xl">
+            <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-yellow-50 rounded-2xl">
               <p className="text-center text-gray-700 font-medium">
-                <CheckCircle className="inline-block text-green-600 mr-2" size={20} />
-                All locations prioritize <span className="text-green-700 font-bold">safety</span> and 
-                <span className="text-green-700 font-bold"> accessibility</span> to colleges and essential services.
+                <CheckCircle className="inline-block text-blue-600 mr-2" size={20} />
+                All locations prioritize <span className="text-blue-700 font-bold">safety</span> and 
+                <span className="text-blue-700 font-bold"> accessibility</span> to colleges and essential services.
               </p>
             </div>
           </div>
@@ -369,7 +367,7 @@ export default function AboutPage() {
       </AnimatedSection>
 
       {/* Vision Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 to-green-50">
+      <AnimatedSection className="section-padding bg-gradient-to-br from-yellow-50 to-blue-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -396,19 +394,19 @@ export default function AboutPage() {
               viewport={{ once: true }}
             >
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-hello-green-100 rounded-2xl flex items-center justify-center">
-                  <Eye className="text-hello-green-600" size={32} />
+                <div className="w-16 h-16 bg-hello-blue-100 rounded-2xl flex items-center justify-center">
+                  <Eye className="text-hello-blue-600" size={32} />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-800">Our Vision</h3>
-                  <p className="text-hello-green-600 font-medium">Building the future of student living</p>
+                  <p className="text-hello-blue-600 font-medium">Building the future of student living</p>
                 </div>
               </div>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 To become the most trusted and preferred student accommodation provider in India, 
                 setting new standards for quality, safety, and student satisfaction. We envision 
-                a future where every student has access to premium living spaces that support 
+                a future where every student has access to affordable premium living spaces that support 
                 their academic and personal growth.
               </p>
               
@@ -420,7 +418,7 @@ export default function AboutPage() {
                   "Create vibrant student communities nationwide"
                 ].map((goal, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="text-hello-green-500" size={20} />
+                    <CheckCircle className="text-hello-blue-500" size={20} />
                     <span className="text-gray-700">{goal}</span>
                   </div>
                 ))}

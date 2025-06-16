@@ -82,7 +82,7 @@
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #65a30d, #84cc16, #facc15);
+    background: linear-gradient(135deg, #0f5fd0, #3b82f6, #facc15);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -109,7 +109,7 @@
     position: absolute;
     inset: 0;
     padding: 3px;
-    background: linear-gradient(135deg, #16a34a, #facc15, #16a34a);
+    background: linear-gradient(135deg, #0f5fd0, #facc15, #0f5fd0);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -118,7 +118,7 @@
   }
 
   .glass-card:hover::before {
-    background: linear-gradient(135deg, #15803d, #eab308, #15803d);
+    background: linear-gradient(135deg, #1e40af, #eab308, #1e40af);
   }
 
   .glass-card-tie-up {
@@ -135,7 +135,7 @@
     position: absolute;
     inset: 0;
     padding: 3px;
-    background: linear-gradient(135deg, #facc15, #16a34a, #facc15);
+    background: linear-gradient(135deg, #facc15, #0f5fd0, #facc15);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -144,7 +144,7 @@
   }
 
   .glass-card-tie-up:hover::before {
-    background: linear-gradient(135deg, #eab308, #15803d, #eab308);
+    background: linear-gradient(135deg, #eab308, #1e40af, #eab308);
   }
 }
 

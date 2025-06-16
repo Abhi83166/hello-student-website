@@ -54,7 +54,8 @@ export default function GalleryPage() {
     '/gallery_4.png',
     '/gallery_5.png',
     '/gallery_6.png',
-    '/gallery_7.png'
+    '/gallery_7.png',
+    '/gallery_8.png'
   ];
 
   const testimonials = [
@@ -238,27 +239,17 @@ export default function GalleryPage() {
                 </blockquote>
 
                 {/* Student Info */}
-                <div className="flex items-center justify-center space-x-4">
-                  <div className="relative w-16 h-16 rounded-full overflow-hidden">
-                    <Image
-                      src={testimonials[currentTestimonial].image}
-                      alt={testimonials[currentTestimonial].name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="text-left">
-                    <h4 className="text-lg font-semibold text-gray-800">
-                      {testimonials[currentTestimonial].name}
-                    </h4>
-                    <p className="text-hello-blue-600 font-medium">
-                      {testimonials[currentTestimonial].college}
-                    </p>
-                    <p className="text-sm text-gray-500 flex items-center">
-                      <Calendar size={14} className="mr-1" />
-                      Resident for {testimonials[currentTestimonial].duration}
-                    </p>
-                  </div>
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold text-gray-800">
+                    {testimonials[currentTestimonial].name}
+                  </h4>
+                  <p className="text-hello-blue-600 font-medium">
+                    {testimonials[currentTestimonial].college}
+                  </p>
+                  <p className="text-sm text-gray-500 flex items-center justify-center mt-1">
+                    <Calendar size={14} className="mr-1" />
+                    Resident for {testimonials[currentTestimonial].duration}
+                  </p>
                 </div>
               </motion.div>
             </div>

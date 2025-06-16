@@ -56,9 +56,9 @@ export default function FloatingContact() {
               
               <button
                 onClick={handlePhoneClick}
-                className="w-full flex items-center gap-3 p-3 rounded-xl bg-hello-green-50 hover:bg-hello-green-100 transition-colors group"
+                className="w-full flex items-center gap-3 p-3 rounded-xl bg-hello-blue-50 hover:bg-hello-blue-100 transition-colors group"
               >
-                <div className="p-2 bg-hello-green-500 text-white rounded-lg group-hover:bg-hello-green-600 transition-colors">
+                <div className="p-2 bg-hello-blue-500 text-white rounded-lg group-hover:bg-hello-blue-600 transition-colors">
                   <Phone size={16} />
                 </div>
                 <div className="text-left">
@@ -69,9 +69,9 @@ export default function FloatingContact() {
               
               <button
                 onClick={handleWhatsAppClick}
-                className="w-full flex items-center gap-3 p-3 rounded-xl bg-green-50 hover:bg-green-100 transition-colors group"
+                className="w-full flex items-center gap-3 p-3 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors group"
               >
-                <div className="p-2 bg-green-500 text-white rounded-lg group-hover:bg-green-600 transition-colors">
+                <div className="p-2 bg-blue-500 text-white rounded-lg group-hover:bg-blue-600 transition-colors">
                   <MessageCircle size={16} />
                 </div>
                 <div className="text-left">
@@ -86,7 +86,7 @@ export default function FloatingContact() {
       
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-gradient-to-r from-hello-blue-500 to-hello-green-500 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 float-animation"
+        className="bg-gradient-to-r from-hello-blue-500 to-hello-blue-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 float-animation"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >

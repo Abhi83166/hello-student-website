@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Heart, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-green-800 to-green-900 text-white">
+    <footer className="bg-[#0f5fd0] text-white">
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -70,7 +70,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={20} className="text-hello-green-400 flex-shrink-0" />
+                <Phone size={20} className="text-hello-blue-400 flex-shrink-0" />
                 <a 
                   href="tel:+917021174615"
                   className="text-gray-300 hover:text-hello-yellow-400 transition-colors"
@@ -79,7 +79,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MessageCircle size={20} className="text-green-400 flex-shrink-0" />
+                <MessageCircle size={20} className="text-blue-400 flex-shrink-0" />
                 <a 
                   href="https://wa.me/919820072322?text=Hi%20Hello%20Student%20team,%20I%20am%20interested%20in%20learning%20more%20about%20your%20student%20accommodation%20services."
                   target="_blank"

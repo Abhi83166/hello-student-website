@@ -48,7 +48,7 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold text-gray-800">
-                Hello <span className="text-green-600">Student</span>
+                Hello <span className="text-[#0f5fd0]">Student</span>
               </h1>
               <p className="text-xs text-gray-600 hidden sm:block">Premium Student Accommodation</p>
             </div>
@@ -66,8 +66,8 @@ export default function Header() {
                   href={item.href}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
                     isActive
-                      ? 'bg-green-100 text-green-700'
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-green-600'
+                      ? 'bg-blue-100 text-[#0f5fd0]'
+                      : 'text-gray-700 hover:bg-gray-100 hover:text-[#0f5fd0]'
                   }`}
                 >
                   <Icon size={18} />
@@ -109,7 +109,7 @@ export default function Header() {
                       onClick={() => setIsMenuOpen(false)}
                       className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-300 ${
                         isActive
-                          ? 'bg-green-100 text-green-700'
+                          ? 'bg-blue-100 text-[#0f5fd0]'
                           : 'text-gray-700 hover:bg-gray-50'
                       }`}
                     >
