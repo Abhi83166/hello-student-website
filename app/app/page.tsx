@@ -204,7 +204,7 @@ export default function HomePage() {
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 priority={index === 0}
               />
             </motion.div>
@@ -252,7 +252,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-yellow-500 text-white font-semibold rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[#0f5fd0] text-white font-semibold rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   Find Your Space
                   <ArrowRight className="ml-2" size={20} />
@@ -302,20 +302,20 @@ export default function HomePage() {
       </section>
 
       {/* Gender Specific Accommodation Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-br from-purple-50 via-pink-50 to-yellow-50">
+      <AnimatedSection className="section-padding bg-blue-50">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-              <div className="relative h-[300px] lg:h-[500px]">
+              <div className="relative h-[500px] lg:h-[600px]">
                 <Image
                   src="/gender_specifc_image.png"
                   alt="Gender specific accommodations"
                   fill
-                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-12">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-12">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -328,14 +328,14 @@ export default function HomePage() {
                         <Users className="text-white" size={40} />
                       </div>
                     </div>
-                    <h2 className="text-3xl lg:text-5xl font-bold text-white mb-4 leading-tight">
+                    <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white mb-4 leading-tight">
                       Separate Accommodations for<br />
                       <span className="text-yellow-300">Girls, Boys, Women and Men</span>
                     </h2>
-                    <p className="text-white/90 text-lg lg:text-xl max-w-2xl mx-auto">
+                    <p className="text-white/90 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto">
                       Safe, secure, and comfortable living spaces designed specifically for your needs
                     </p>
-                    <div className="flex justify-center mt-6 space-x-4">
+                    <div className="flex flex-col sm:flex-row justify-center items-center mt-6 space-y-2 sm:space-y-0 sm:space-x-4">
                       <div className="flex items-center bg-white/20 backdrop-blur-md px-4 py-2 rounded-full">
                         <Shield className="text-hello-blue-400 mr-2" size={20} />
                         <span className="text-white font-medium">24/7 Security</span>
@@ -366,7 +366,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
+                <div className="text-4xl lg:text-5xl font-bold text-[#0f5fd0] mb-2">
                   <CountUpNumber end={stat.number} />
                   {stat.suffix}
                 </div>
@@ -378,11 +378,11 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Amenities Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-br from-blue-50 to-yellow-50">
+      <AnimatedSection className="section-padding bg-blue-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
-              Premium <span className="text-gradient">Amenities</span> & Services
+              Premium <span className="text-[#0f5fd0]">Amenities</span> & Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience comfort and convenience with our comprehensive range of amenities 
@@ -394,12 +394,12 @@ export default function HomePage() {
             {directAmenities.map((amenity, index) => {
               const Icon = amenity.icon;
               const pastelColors = [
-                'bg-blue-50', 'bg-pink-50', 'bg-purple-50', 
-                'bg-indigo-50', 'bg-cyan-50', 'bg-teal-50'
+                'bg-blue-100', 'bg-pink-100', 'bg-purple-100', 
+                'bg-indigo-100', 'bg-cyan-100', 'bg-teal-100'
               ];
               const iconColors = [
-                'text-blue-600', 'text-pink-600', 'text-purple-600',
-                'text-indigo-600', 'text-cyan-600', 'text-teal-600'
+                'text-blue-700', 'text-pink-700', 'text-purple-700',
+                'text-indigo-700', 'text-cyan-700', 'text-teal-700'
               ];
               return (
                 <motion.div
@@ -427,13 +427,13 @@ export default function HomePage() {
           {/* Tie-ups Section */}
           <div className="mt-16">
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8">
-              <span className="text-gradient">TIE-UPS</span> & ADD-ONS
+              <span className="text-[#0f5fd0]">TIE-UPS</span> & ADD-ONS
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {tieUpAmenities.map((amenity, index) => {
                 const Icon = amenity.icon;
-                const pastelColors = ['bg-orange-50', 'bg-green-50', 'bg-violet-50'];
-                const iconColors = ['text-orange-600', 'text-green-600', 'text-violet-600'];
+                const pastelColors = ['bg-orange-100', 'bg-green-100', 'bg-violet-100'];
+                const iconColors = ['text-orange-700', 'text-green-700', 'text-violet-700'];
                 return (
                   <motion.div
                     key={index}
@@ -443,7 +443,7 @@ export default function HomePage() {
                     viewport={{ once: true }}
                     className={`${pastelColors[index]} p-8 rounded-2xl shadow-lg hover-lift group transition-all duration-300 border border-white/50 relative`}
                   >
-                    <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <div className="absolute top-4 right-4 bg-[#0f5fd0] text-white text-xs font-bold px-3 py-1 rounded-full">
                       PARTNER SERVICE
                     </div>
                     <div className="w-16 h-16 bg-white/70 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
@@ -464,12 +464,12 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Why Choose Us Section */}
-      <AnimatedSection className="section-padding bg-gradient-to-bl from-yellow-50 via-white to-blue-50">
+      <AnimatedSection className="section-padding bg-blue-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Why Choose <span className="text-gradient">Hello Student</span>?
+                Why Choose <span className="text-[#0f5fd0]">Hello Student</span>?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 We understand the unique needs of students and provide tailored solutions 
@@ -504,7 +504,7 @@ export default function HomePage() {
                       viewport={{ once: true }}
                       className="flex items-start space-x-4"
                     >
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="text-blue-600" size={24} />
                       </div>
                       <div>
@@ -533,10 +533,10 @@ export default function HomePage() {
                   src="/student_community.png"
                   alt="Students enjoying community living"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yellow-50 to-blue-50 p-3 rounded-2xl shadow-xl border border-blue-100/50">
+              <div className="absolute -top-4 -right-4 bg-blue-50 p-3 rounded-2xl shadow-xl border border-blue-100/50">
                 <div className="flex items-center space-x-1">
                   <Star className="text-hello-yellow-500" size={16} fill="currentColor" />
                   <span className="font-semibold text-gray-800 text-sm">4.9/5</span>
@@ -549,10 +549,10 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* CTA Section */}
-      <AnimatedSection className="section-padding gradient-bg">
+      <AnimatedSection className="section-padding bg-blue-50">
         <div className="container-custom text-center">
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Ready to Find Your Perfect <span className="text-gradient">Student Home</span>?
+            Ready to Find Your Perfect <span className="text-[#0f5fd0]">Student Home</span>?
           </h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Join hundreds of satisfied students who have found their ideal accommodation with Hello Student. 
@@ -561,7 +561,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-yellow-500 text-white font-semibold rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#0f5fd0] text-white font-semibold rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               Get Started Today
               <ArrowRight className="ml-2" size={20} />

@@ -182,9 +182,7 @@ export default function AboutPage() {
                 of students because we've been there ourselves.
               </p>
               <p>
-                As of Today, we proudly serve students from over 15 prestigious colleges and institutions 
-                across Mumbai, providing them with not just accommodation, but a complete living 
-                experience that includes modern amenities, community building, and unwavering support.
+              As of today, we have proudly served over 1,500+ students from across the country, supporting those enrolled in more than 30 prestigious colleges and institutions in and around Mumbai. We offer more than just accommodation—we provide a complete living experience enriched with modern amenities, a strong sense of community, and unwavering support
               </p>
             </div>
           </div>
@@ -206,6 +204,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value, index) => {
               const Icon = value.icon;
+              const pastelColors = [
+                'bg-blue-100', 'bg-pink-100', 'bg-purple-100', 'bg-indigo-100'
+              ];
+              const iconColors = [
+                'text-blue-700', 'text-pink-700', 'text-purple-700', 'text-indigo-700'
+              ];
               return (
                 <motion.div
                   key={index}
@@ -213,10 +217,10 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="glass-card p-8 rounded-2xl shadow-lg hover-lift"
+                  className={`${pastelColors[index]} p-8 rounded-2xl shadow-lg hover-lift group transition-all duration-300 border border-white/50`}
                 >
-                  <div className="w-16 h-16 bg-hello-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                    <Icon className="text-hello-blue-600" size={32} />
+                  <div className="w-16 h-16 bg-white/70 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <Icon className={iconColors[index]} size={32} />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">
                     {value.title}
@@ -246,6 +250,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {achievements.map((achievement, index) => {
               const Icon = achievement.icon;
+              const pastelColors = [
+                'bg-green-100', 'bg-orange-100', 'bg-violet-100', 'bg-cyan-100'
+              ];
+              const iconColors = [
+                'text-green-700', 'text-orange-700', 'text-violet-700', 'text-cyan-700'
+              ];
               return (
                 <motion.div
                   key={index}
@@ -253,10 +263,10 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="text-center glass-card p-8 rounded-2xl"
+                  className={`text-center ${pastelColors[index]} p-8 rounded-2xl shadow-lg hover-lift group transition-all duration-300 border border-white/50`}
                 >
-                  <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <Icon className="text-hello-blue-600" size={32} />
+                  <div className="w-16 h-16 bg-white/70 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <Icon className={iconColors[index]} size={32} />
                   </div>
                   <div className="text-3xl font-bold text-gradient mb-2">
                     {achievement.number}

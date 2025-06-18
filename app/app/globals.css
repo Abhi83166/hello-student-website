@@ -70,7 +70,7 @@
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, #fef3c7 0%, #fef9c3 25%, #ecfccb 50%, #d9f99d 75%, #bef264 100%);
+    background: #dbeafe;
   }
   
   .glass-effect {
@@ -82,17 +82,11 @@
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #0f5fd0, #3b82f6, #facc15);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #0f5fd0;
   }
 
   .easy-text {
-    background: linear-gradient(135deg, #fff01fd7, #ffed27c6, #f4ff20d0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #facc15;
   }
 
   .glass-card {
