@@ -220,6 +220,14 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
+              const pastelColors = [
+                'bg-blue-100', 'bg-pink-100', 'bg-purple-100', 
+                'bg-indigo-100', 'bg-cyan-100'
+              ];
+              const iconColors = [
+                'text-blue-700', 'text-pink-700', 'text-purple-700',
+                'text-indigo-700', 'text-cyan-700'
+              ];
               return (
                 <motion.div
                   key={index}
@@ -228,10 +236,10 @@ export default function ContactPage() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   onClick={info.action}
-                  className={`bg-${info.color}-50 p-8 rounded-2xl text-center hover-lift cursor-pointer group`}
+                  className={`${pastelColors[index]} p-8 rounded-2xl text-center hover-lift cursor-pointer group transition-all duration-300 border border-white/50 shadow-lg`}
                 >
-                  <div className={`w-16 h-16 bg-${info.color}-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className={`text-${info.color}-600`} size={32} />
+                  <div className="w-16 h-16 bg-white/70 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                    <Icon className={iconColors[index]} size={32} />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-800 mb-2">
                     {info.title}

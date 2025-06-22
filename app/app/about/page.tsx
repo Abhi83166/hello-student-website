@@ -182,7 +182,7 @@ export default function AboutPage() {
                 of students because we've been there ourselves.
               </p>
               <p>
-              As of today, we have proudly served over 1,500+ students from across the country, supporting those enrolled in more than 30 prestigious colleges and institutions in and around Mumbai. We offer more than just accommodation—we provide a complete living experience enriched with modern amenities, a strong sense of community, and unwavering support
+              As of today, we have proudly served over 1,500 students from across the country, supporting those enrolled in more than 30 prestigious colleges and institutions in and around Mumbai. We offer more than just accommodation—we provide a complete living experience enriched with modern amenities, a strong sense of community, and unwavering support
               </p>
             </div>
           </div>
